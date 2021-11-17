@@ -19,6 +19,6 @@ class MyEcsConstructStack(cdk.Stack):
             cpu=512,                    # Default is 256
             desired_count=6,            # Default is 1
             task_image_options=ecs_patterns.ApplicationLoadBalancedTaskImageOptions(
-                image=ecs.ContainerImage.from_registry("test")),
+                image=ecs.ContainerImage.from_registry("threagile-docker-image-store")),
             memory_limit_mib=2048,      # Default is 512
             public_load_balancer=True)  # Default is False
